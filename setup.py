@@ -5,14 +5,14 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="parse_pubmed",
-    version="2020.04.02",
+    version="2020.04.02dev0",
     author="Justin Sybrandt",
     author_email="justin@sybrandt.com",
     description="Parses the XML distribution of PubMed into pickles",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/JSybrandt/ParsePubMed",
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages("parse_pubmed"),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
