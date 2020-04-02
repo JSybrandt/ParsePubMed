@@ -203,7 +203,7 @@ def main(
     pickle_path = output_dir.joinpath(name + ".pickle")
     assert not pickle_path.exists(), \
         f"Output file, {pickle_path}, already exists. Halting."
-    records = [r for r in tqdm(parse_zipped_file(xml_path))]
+    records = [r for r in parse_zipped_file(xml_path)]
     with open(pickle_path, 'wb') as pickle_file:
       pickle.dump(records, pickle_file)
 
